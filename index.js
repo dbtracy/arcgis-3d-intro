@@ -4,7 +4,7 @@ require([
   "esri/MapView",
   "esri/views/SceneView",
   "esri/layers/TileLayer"
-], function (Map, SceneView, TileLayer) {
+], function (Locator, Map, MapView, SceneView, TileLayer) {
   const transportationLayer = new TileLayer({
     url: "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer",
     id: "streets",
