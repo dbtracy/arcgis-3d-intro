@@ -1,6 +1,7 @@
 require([
   "esri/tasks/Locator",
   "esri/Map",
+  "esri/MapView",
   "esri/views/SceneView",
   "esri/layers/TileLayer"
 ], function (Map, SceneView, TileLayer) {
