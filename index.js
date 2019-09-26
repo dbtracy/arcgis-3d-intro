@@ -43,4 +43,5 @@ require([
       view.goTo(housingLayer.fullExtent)
     }, 3000);
   })
+
 })
