@@ -37,4 +37,10 @@ require([
       console.log("LayerView for streets created!", event.layerView)
     }
   })
+  // animation to zoom to chosen layer!
+  housingLayer.when(function () {
+    setTimeout(() => {
+      view.goTo(housingLayer.fullExtent)
+    }, 3000);
+  })
 })
