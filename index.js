@@ -1,4 +1,5 @@
 require([
+  "esri/tasks/Locator",
   "esri/Map",
   "esri/views/SceneView",
   "esri/layers/TileLayer"
