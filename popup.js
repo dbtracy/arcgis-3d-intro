@@ -27,3 +27,9 @@ view.on("click", function (event) {
   let lat = Math.round(event.mapPoint.latitude * 1000) / 1000
   let lon = Math.round(event.mapPoint.longitude * 1000) / 1000
 })
+
+view.popup.open({
+  // Set popup's title/location to coordinates of clicked location
+  title: `Reverse geocode: [${lon}, ${lat}]`,
+  location: event.mapPoint
+})
